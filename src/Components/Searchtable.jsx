@@ -357,7 +357,7 @@ function Searchtable() {
         placeholder=" 🔎 Search Using Train No / Name / From / To "
         value={query}
         onChange={(e) => setQuery(e.target.value)}
-        className="w-[800px] h-[60px] text-center placeholder:text-center border rounded"
+        className="w-[800px] h-[60px] text-center placeholder:text-center border text-black placeholder-black  rounded"
       />
 
       <table className="text-white bg-black font-extralight  table-auto border-collapse w-full">
