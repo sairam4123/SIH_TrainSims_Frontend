@@ -7,7 +7,7 @@ import Bottomdiv from "./Components/Bottomdiv";
 import Sidebar from "./Components/Sidebar";
 function App() {
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
+    <div className="min-h-screen scroll-bar bg-gray-900 text-white">
       <Navbar />
       <aside className="absolute top-8 left-0 h-full">
         <Sidebar />
