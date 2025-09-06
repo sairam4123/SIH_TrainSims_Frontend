@@ -114,7 +114,7 @@ function Bottomdiv() {
         <div className="flex ">
           {stationforms.map(function (item) {
             return (
-                <p className="text-black px-2">{item.name}</p>
+                <p className="text-black px-5 ">{item.name}</p>
             );
           })}
         </div>
