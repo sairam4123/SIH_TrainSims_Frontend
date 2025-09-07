@@ -13,10 +13,10 @@ const Sidebar = () => {
   const currentStation = "TPJ";
 
   return (
-    <div className="bg-black/30 text-white w-64 max-h-full overflow-hidden rounded-lg m-3 font-extralight justify-center flex flex-1">
-      <div className=" max-h-full w-full h-full overflow-y-auto">
-        <h1 className="text-center font-bold">ROUTE</h1>
-        <div className="flex h-full flex-col">
+    <div className="bg-black/30 text-white w-64 overflow-hidden rounded-lg m-3 font-extralight justify-center flex flex-1">
+      <div className="w-full overflow-y-auto">
+        <h1 className="text-center pt-2 font-bold">ROUTE</h1>
+        <div className="flex h-fit py-2 flex-col">
           {ROUTE.map((station, index, array) => (
             <div key={station.code} className="flex flex-col items-center">
               <div className="px-2 grid grid-cols-3">

@@ -1,10 +1,12 @@
 function Navbar() {
   return (
     <div className="bg-gray-800 py-1 px-2  text-white">
-      <a href="" className="p-6">
+      <a href="" className="px-2 py-1">
         File
       </a>
-      <a href="">Actions</a>
+      <a href="" className="px-2 py-1">
+        Actions
+      </a>
     </div>
   );
 }
