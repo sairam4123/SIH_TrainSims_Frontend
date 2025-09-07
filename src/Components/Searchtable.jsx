@@ -95,6 +95,90 @@ function Searchtable() {
       trackno: "3",
       priority: "1",
     },
+    {
+      id: 1,
+      trainno: "12505",
+      trainname: "Cholan Express",
+      from: "CBE",
+      to: "TPJ",
+      layover: "3.0",
+      ETA: "10:40",
+      STA: "11:00",
+      dept: "12:00",
+      delay: "-00:20",
+      trackno: "4",
+      priority: "1",
+    },
+    {
+      id: 2,
+      trainno: "12403",
+      trainname: "Pandian Express",
+      from: "MDU",
+      to: "CBE",
+      layover: "4.0",
+      ETA: "13:55",
+      STA: "13:56",
+      delay: "-00:01",
+      dept: "14:00",
+      trackno: "2",
+      priority: "2",
+    },
+    {
+      id: 3,
+      trainno: "16052",
+      trainname: "Cheran Express",
+      from: "CBE",
+      to: "MAS",
+      layover: "10.0",
+      ETA: "18:50",
+      STA: "16:50",
+      dept: "17:00",
+      delay: "+02:00",
+      trackno: "3",
+      priority: "1",
+    },
+    {
+      id: 4,
+      trainno: "12505",
+      trainname: "Cholan Express",
+      from: "CBE",
+      to: "TPJ",
+      layover: "3.0",
+      ETA: "10:40",
+      STA: "11:00",
+      dept: "12:00",
+      delay: "-00:20",
+      trackno: "4",
+      priority: "1",
+    },
+    {
+      id: 5,
+      trainno: "12403",
+      trainname: "Pandian Express",
+      from: "MDU",
+      to: "CBE",
+      layover: "4.0",
+      ETA: "13:55",
+      STA: "13:56",
+      delay: "-00:01",
+      dept: "14:00",
+      trackno: "2",
+      priority: "2",
+    },
+    {
+      id: 6,
+      trainno: "16052",
+      trainname: "Cheran Express",
+      from: "CBE",
+      to: "MAS",
+      layover: "10.0",
+      ETA: "18:50",
+      STA: "16:50",
+      dept: "17:00",
+      delay: "+02:00",
+      trackno: "3",
+      priority: "1",
+    },
   ];
 
   const filteredRows = rows.filter((item) => {
@@ -108,7 +192,7 @@ function Searchtable() {
   });
 
   return (
-    <div className="bg-gray-800 w-5/6 space-y-2 p-2 mt-4 text-center overflow-y-hidden max-h-[32rem] rounded-md justify-self-end flex-1 cursor-pointer ">
+    <div className="bg-gray-800 w-5/6 space-y-2 p-2 mt-4 text-center overflow-y-hidden h-max max-h-[50rem] rounded-md justify-self-end flex-1 cursor-pointer ">
       <div className=" border border-white/50 bg-gray-900 flex flex-row items-center justify-center gap-2 w-full rounded-md p-2">
       <Search className="text-white" size={16} />
       <input
@@ -119,8 +203,8 @@ function Searchtable() {
         className="w-full bg-inherit outline-none text-white caret-white placeholder:text-white/80"
         />
       </div>
-      <div className="overflow-y-auto max-h-60 rounded-md border border-gray-50/50">
-        <table className="text-white bg-gray-900 font-extralight overflow-y-auto  table-auto border-collapse w-full">
+      <div className="overflow-y-auto max-h-96 h-max rounded-md border border-gray-50/50">
+        <table className="text-white bg-gray-900 font-extralight  table-auto border-collapse w-full">
           <thead>
             <tr>
               <th className="w-1 whitespace-nowrap px-4 py-1">S.No</th>
@@ -157,11 +241,11 @@ function Searchtable() {
                   <td className="px-2 py-1">{item.priority}</td>
                   <td className="px-2 py-1 relative">
                     <div className="flex gap-2">
-                      <div className="flex border border-white/50 rounded-full px-3 py-1 bg-gray-700 font-extralight w-max">
+                      <div className="flex border border-white/75 rounded-lg px-3 py-1 bg-gray-950 font-extralight w-max">
                         <p>Hold at SRGM</p>
                       </div>
                       <button
-                        className="bg-gray-700 border border-white/50 text-white px-2 py-1 flex flex-row gap-2 rounded"
+                        className="bg-gray-950 border border-white/75 text-white px-2 py-1 flex flex-row gap-2 rounded-lg"
                         onClick={() =>
                           setOpenRow(openRow === item.id ? null : item.id)
                         }

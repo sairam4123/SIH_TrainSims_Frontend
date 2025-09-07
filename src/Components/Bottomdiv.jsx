@@ -137,7 +137,7 @@ function Bottomdiv() {
 
 function SuggestedActions() {
   return (
-    <div className="grid grid-cols-1  col-span-2 bg-black rounded-md mt-2 text-white p-4 ">
+    <div className="grid grid-cols-1  col-span-2 bg-gray-950 rounded-md mt-2 text-white p-4 ">
       <h2 className="mb-4 col-span-1 font-bold text-lg">Suggested Actions </h2>
       <div className="border w-max bg-gray-500/20 border-white/50 flex flex-col gap-2 justify-between p-2 m-2 rounded-lg place-self-center">
         <p>12605 to Hold At SRGM for 5 mins</p>
