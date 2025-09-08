@@ -2,7 +2,7 @@ function Bottomdiv() {
   const stationforms = [
     { name: "MS" },
     { name: "TBM" },
-    { name: "CGl" },
+    { name: "CGL" },
     { name: "MLMR" },
     { name: "VM" },
     { name: "VRM" },
@@ -13,6 +13,22 @@ function Bottomdiv() {
     { name: "TPJ" },
     { name: "PDKT" },
     { name: "KKDI" },
+  ];
+
+  const arrivalTimes = [
+    "15:40",
+    "16:15",
+    "16:50",
+    "17:25",
+    "18:00",
+    "18:35",
+    "19:10",
+    "19:45",
+    "20:20",
+    "20:55",
+    "21:30",
+    "22:05",
+    "22:40",
   ];
 
   const currentStation = "GOC";
@@ -113,14 +129,17 @@ function Bottomdiv() {
                     <div
                       className={`${
                         currentStation === item.name
-                          ? "bg-red-800"
+                          ? "bg-red-800 hover:bg-red-700"
                           : currentIndex < index
-                          ? "bg-sky-400"
+                          ? "bg-sky-400 hover:bg-sky-300"
                           : "bg-gray-800"
                       } h-8 w-8 rounded-full absolute`}
                     />
                   </div>
                   <p className="text-white mt-1 text-center">{item.name}</p>
+                  <p className="text-white/70 mt-0.5 text-center text-sm">
+                    {arrivalTimes[index]}
+                  </p>
                 </div>
                 {index !== array.length - 1 && (
                   <hr className=" h-0.5 mt-4 w-10 mx-2 border-0 rounded bg-gray-200 " />
