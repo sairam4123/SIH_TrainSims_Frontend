@@ -1,3 +1,5 @@
+import { ThumbsUp, ThumbsDown, Train } from "lucide-react";
+
 function Bottomdiv() {
   const stationforms = [
     { name: "MS" },
@@ -46,11 +48,11 @@ function Bottomdiv() {
               {/* First line */}
               <div className="border-t-2 p-10 border-white/70 w-full"></div>
               {/* Number Box positioned on first line */}
-              <div className="hover:bg-sky-500 cursor-pointer absolute left-10 -top-3 bg-sky-600 text-white px-12 py-1 rounded-e-md rounded-tl-[36px] rounded-bl-md">
-                12605
+              <div className="hover:bg-sky-500 cursor-pointer gap-2 flex flex-row items-center justify-center absolute left-10 -top-3 bg-sky-600 text-white px-12 py-1 rounded-e-md rounded-tl-[36px] rounded-bl-md">
+                <Train size={20} /> 12605
               </div>
-              <div className="hover:bg-yellow-500 cursor-pointer absolute right-64 -top-3 bg-yellow-600 text-white px-12 py-1 rounded-e-md rounded-tl-[36px] rounded-bl-md">
-                16505
+              <div className="hover:bg-yellow-500 cursor-pointer gap-2 flex flex-row items-center justify-center absolute right-64 -top-3 bg-yellow-600 text-white px-12 py-1 rounded-e-md rounded-tl-[36px] rounded-bl-md">
+                <Train size={20} /> 16505
               </div>
             </div>
           </div>
@@ -164,10 +166,11 @@ function SuggestedActions() {
           Holding at Srirangam for 5 mins reduces delay by 5 mins
         </p>
         <div className="flex flex-row gap-2 text-white">
-          <button className="bg-green-600 px-6 py-1 hover:bg-green-500 rounded-md">
-            ACCEPT
+          <button className="bg-green-600 flex flex-row items-center gap-2 px-6 py-1 hover:bg-green-500 rounded-md">
+            <ThumbsUp size={20} /> ACCEPT
           </button>
-          <button className="bg-red-600 px-6 py-1 hover:bg-red-500 rounded-md">
+          <button className="bg-red-600 flex flex-row items-center gap-2 px-6 py-1 hover:bg-red-500 rounded-md">
+            <ThumbsDown size={20} />
             DECLINE
           </button>
         </div>
@@ -178,11 +181,11 @@ function SuggestedActions() {
           Holding at Srirangam for 5 mins reduces delay by 5 mins
         </p>
         <div className="flex flex-row gap-2 text-white ">
-          <button className="bg-green-600 px-6 py-1 hover:bg-green-500 rounded-md">
-            ACCEPT
+          <button className="bg-green-600 flex flex-row items-center gap-2 px-6 py-1 hover:bg-green-500 rounded-md">
+            <ThumbsUp size={20} /> ACCEPT
           </button>
-          <button className="bg-red-600 px-6 py-1 hover:bg-red-500 rounded-md">
-            DECLINE
+          <button className="bg-red-600 flex flex-row items-center gap-2 px-6 py-1 hover:bg-red-500 rounded-md">
+            <ThumbsDown size={20} /> DECLINE
           </button>
         </div>
       </div>
